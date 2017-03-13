@@ -1,5 +1,15 @@
 # 3D Map Demo
 
+Helpful tutorials:
+
+Sitepoint article:  
+https://www.sitepoint.com/3d-maps-with-eegeo-and-leaflet/
+
+
+Leaflet tutorials:  
+http://leafletjs.com/examples/quick-start/
+
+
 ### Setup
 
 * Initial html page + Leaflet in the Head + initialization JS
