@@ -49,7 +49,55 @@ console.log('working');
 * Now we have a 3d map (may only work on server due to cross-origin - not on local)
 
 
-### 3D map Motion
+### 3D map change heading, tilt, zoom
+
+* map.setView is type of scene
+* [32.851105, -117.272999] is new location
+* headingDegrees 0 is north, tiltDegrees:20.0 (0 is height/tilt)
+
+
+```javascript
+
+var map = L.eeGeo.map('map', '<api key>', {
+  center: [32.796325, -117.256731],
+  zoom: 15
+});
+console.log('working');
+
+setTimeout(function() {
+  map.setView([32.851105, -117.272999], 14, {headingDegrees: 150, tiltDegrees:20.0});
+}, 20000);
+
+
+```
+
+
+### Adding pins
+
+Adding a marker:  
+
+`L.marker([32.850596, -117.273352]).addTo(map);`
+
+Adding several markers:  
+
+```javascript
+var map = L.eeGeo.map('map', '<api key>', {
+  center: [32.796325, -117.256731],
+  zoom: 15
+});
+console.log('working');
+
+setTimeout(function() {
+  map.setView([32.851105, -117.272999], 14, {headingDegrees: 150, tiltDegrees:20.0});
+}, 20000);
+
+L.marker([32.850596, -117.256731]).addTo(map);
+L.marker([32.850596, -117.273362]).addTo(map);
+L.marker([32.850596, -117.273472]).addTo(map);
+L.marker([32.850596, -117.273682]).addTo(map);
+L.marker([32.850596, -117.273992]).addTo(map);
+
+```
 
 
 
