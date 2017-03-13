@@ -34,4 +34,40 @@
 
 * eeGeo.js is built on top of Leaflet, so uses similar instructions
 
-* 
+### 3D map with eeGeo
+
+* change code to :
+
+```javascript
+var map = L.eeGeo.map('map', '<api key>', {
+  center: [32.796325, -117.256731],
+  zoom: 15
+});
+console.log('working');
+```
+
+* Now we have a 3d map (may only work on server due to cross-origin - not on local)
+
+
+### 3D map Motion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+######
